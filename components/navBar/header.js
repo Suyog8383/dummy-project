@@ -18,10 +18,10 @@ function Header({ scrollHandler, homeRef, aboutRef, servicesRef, contactRef }) {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="w-10 h-10 text-indigo-500 p-2 bg-indigo-100 rounded-full"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              className="w-10 h-10 text-indigo-500 p-2 bg-indigo-100 rounded-full"
               viewBox="0 0 24 24"
             >
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
@@ -30,9 +30,10 @@ function Header({ scrollHandler, homeRef, aboutRef, servicesRef, contactRef }) {
           </a>
 
           <button
+            onClick={toggleMenu}
             data-collapse-toggle="mobile-menu-2"
             type="button"
-            className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="mobile-menu-2"
             aria-expanded="false"
           >
@@ -66,25 +67,25 @@ function Header({ scrollHandler, homeRef, aboutRef, servicesRef, contactRef }) {
           <nav class="hidden md:flex items-center space-x-4">
             <div
               onClick={() => scrollHandler(homeRef)}
-              class="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base"
+              class="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
             >
               Home{" "}
             </div>
             <div
               onClick={() => scrollHandler(aboutRef)}
-              class="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base"
+              class="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
             >
               About Us
             </div>
             <div
               onClick={() => scrollHandler(servicesRef)}
-              class="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base"
+              class="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
             >
               Services
             </div>
             <div
               onClick={() => scrollHandler(contactRef)}
-              class="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base"
+              class="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
             >
               Contact Us
             </div>
@@ -94,6 +95,51 @@ function Header({ scrollHandler, homeRef, aboutRef, servicesRef, contactRef }) {
           </button>
         </div>
       </div>
+      {isMenuOpen && (
+        <div class="md:hidden">
+          <nav class="md:flex items-center">
+            <div
+              onClick={() => {
+                toggleMenu();
+                scrollHandler(homeRef);
+              }}
+              class="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
+            >
+              Home{" "}
+            </div>
+            <div
+              onClick={() => {
+                toggleMenu();
+                scrollHandler(aboutRef);
+              }}
+              class="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
+            >
+              About Us
+            </div>
+            <div
+              onClick={() => {
+                scrollHandler(servicesRef);
+                toggleMenu();
+              }}
+              class="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
+            >
+              Services
+            </div>
+            <div
+              onClick={() => {
+                scrollHandler(contactRef);
+                toggleMenu();
+              }}
+              class="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
+            >
+              Contact Us
+            </div>
+          </nav>
+          <div class="border-0 py-2 flex justify-center align-middle focus:outline-none rounded text-base cursor-pointer">
+            <h4>Welcome to tailwind</h4>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
