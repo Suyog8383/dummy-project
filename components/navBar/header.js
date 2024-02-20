@@ -10,10 +10,10 @@ function Header({ scrollHandler, homeRef, aboutRef, servicesRef, contactRef }) {
   };
 
   return (
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white text-gray-600 body-font">
-      <div class="container px-5 max-w-full">
-        <div class="flex justify-between items-center py-4">
-          <a href="#" class="flex items-center">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white text-gray-600 body-font">
+      <div className="container px-5 max-w-full">
+        <div className="flex justify-between items-center py-4">
+          <a href="#" className="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -26,7 +26,7 @@ function Header({ scrollHandler, homeRef, aboutRef, servicesRef, contactRef }) {
             >
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
             </svg>
-            <span class="ml-3 text-xl font-medium">Tailblocks</span>
+            <span className="ml-3 text-xl font-medium">Tailblocks</span>
           </a>
 
           <button
@@ -64,46 +64,46 @@ function Header({ scrollHandler, homeRef, aboutRef, servicesRef, contactRef }) {
             </svg>
           </button>
 
-          <nav class="hidden md:flex items-center space-x-4">
+          <nav className="hidden md:flex items-center space-x-4">
             <div
               onClick={() => scrollHandler(homeRef)}
-              class="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
+              className="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
             >
               Home{" "}
             </div>
             <div
               onClick={() => scrollHandler(aboutRef)}
-              class="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
+              className="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
             >
               About Us
             </div>
             <div
               onClick={() => scrollHandler(servicesRef)}
-              class="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
+              className="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
             >
               Services
             </div>
             <div
               onClick={() => scrollHandler(contactRef)}
-              class="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
+              className="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
             >
               Contact Us
             </div>
           </nav>
-          <button class="hidden md:block bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base">
+          <button className="hidden md:block bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base">
             Button
           </button>
         </div>
       </div>
       {isMenuOpen && (
-        <div class="md:hidden">
-          <nav class="md:flex items-center">
+        <div className="md:hidden">
+          <nav className="md:flex items-center">
             <div
               onClick={() => {
                 toggleMenu();
                 scrollHandler(homeRef);
               }}
-              class="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
+              className="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
             >
               Home{" "}
             </div>
@@ -112,7 +112,7 @@ function Header({ scrollHandler, homeRef, aboutRef, servicesRef, contactRef }) {
                 toggleMenu();
                 scrollHandler(aboutRef);
               }}
-              class="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
+              className="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
             >
               About Us
             </div>
@@ -121,7 +121,7 @@ function Header({ scrollHandler, homeRef, aboutRef, servicesRef, contactRef }) {
                 scrollHandler(servicesRef);
                 toggleMenu();
               }}
-              class="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
+              className="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
             >
               Services
             </div>
@@ -130,12 +130,12 @@ function Header({ scrollHandler, homeRef, aboutRef, servicesRef, contactRef }) {
                 scrollHandler(contactRef);
                 toggleMenu();
               }}
-              class="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
+              className="border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-base cursor-pointer"
             >
               Contact Us
             </div>
           </nav>
-          <div class="border-0 py-2 flex justify-center align-middle focus:outline-none rounded text-base cursor-pointer">
+          <div className="border-0 py-2 flex justify-center align-middle focus:outline-none rounded text-base cursor-pointer">
             <h4>Welcome to tailwind</h4>
           </div>
         </div>
