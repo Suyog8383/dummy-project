@@ -11,26 +11,19 @@ function ServicesComponent({ servicesRef }) {
               <div class="h-1 w-20 bg-indigo-500 rounded"></div>
             </h1>
           </div>
-          {/* <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
-            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-            gentrify, subway tile poke farm-to-table. Franzen you probably
-            haven't heard of them man bun deep jianbing selfies heirloom prism
-            food truck ugh squid celiac humblebrag.
-          </p> */}
         </div>
         <div class="flex flex-wrap -m-4">
           <div class="xl:w-1/4 md:w-1/2 p-4">
-            <div class="bg-gray-100 p-6 rounded-lg">
+            <div class="p-6 rounded-lg h-full bg-indigo-500">
               <img
                 class="h-40 rounded w-full object-cover object-center mb-6"
                 src="https://www.sherpadesk.com/hubfs/Spyder%20Bots%20hero.jpg#keepProtocol"
                 alt="content"
               />
-              <h3 class="tracking-widest text-indigo-500 text-xl font-medium title-font">
+              <h3 class="tracking-widest text-black text-xl font-medium title-font">
                 Web Crawling
               </h3>
-
-              <p class="leading-relaxed text-sm">
+              <p class="leading-relaxed text-sm text-white">
                 Explore the Web's Depth Uncover hidden gems of information with
                 our advanced web crawling services. We navigate the complexities
                 of the internet to extract relevant data, providing you with a
@@ -39,17 +32,16 @@ function ServicesComponent({ servicesRef }) {
             </div>
           </div>
           <div class="xl:w-1/4 md:w-1/2 p-4">
-            <div class="bg-gray-100 p-6 rounded-lg">
+            <div class="bg-indigo-500 p-6 rounded-lg h-full">
               <img
                 class="h-40 rounded w-full object-cover object-center mb-6"
                 src="https://th.bing.com/th/id/OIP.TocdGCDxdtwAIBLO133w-QAAAA?w=189&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
                 alt="content"
               />
-              <h3 class="tracking-widest text-indigo-500 text-xl font-medium title-font">
+              <h3 class="tracking-widest text-black text-xl font-medium title-font">
                 Mobile App Scraping
               </h3>
-
-              <p class="leading-relaxed text-sm">
+              <p class="leading-relaxed text-sm text-white">
                 Navigate App Data with Precision Extract valuable insights from
                 mobile applications with our specialized app scraping services.
                 We delve into the intricacies of apps to gather relevant data,
@@ -58,17 +50,16 @@ function ServicesComponent({ servicesRef }) {
             </div>
           </div>
           <div class="xl:w-1/4 md:w-1/2 p-4">
-            <div class="bg-gray-100 p-6 rounded-lg">
+            <div class="bg-indigo-500 p-6 rounded-lg h-full">
               <img
                 class="h-40 rounded w-full object-cover object-center mb-6"
                 src="https://th.bing.com/th/id/OIP.R9GtfVwDOUd63N8RXtHaHgHaE8?w=252&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
                 alt="content"
               />
-              <h3 class="tracking-widest text-indigo-500 text-xl font-medium title-font">
+              <h3 class="tracking-widest text-black text-xl font-medium title-font">
                 Data Crawling
               </h3>
-
-              <p class="leading-relaxed text-sm">
+              <p class="leading-relaxed text-sm text-white">
                 Transforming Raw Data into Actionable Insights Our data crawling
                 services go beyond extraction. We structure, clean, and
                 transform raw data into meaningful insights, empowering your
@@ -77,17 +68,16 @@ function ServicesComponent({ servicesRef }) {
             </div>
           </div>
           <div class="xl:w-1/4 md:w-1/2 p-4">
-            <div class="bg-gray-100 p-6 rounded-lg">
+            <div class="bg-indigo-500 p-6 rounded-lg h-full">
               <img
                 class="h-40 rounded w-full object-cover object-center mb-6"
                 src="https://th.bing.com/th/id/OIP.CjzxwielhV8e9ZCbRedAVwHaE8?w=248&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
                 alt="content"
               />
-              <h3 class="tracking-widest text-indigo-500 text-xl font-medium title-font">
+              <h3 class="tracking-widest text-black text-xl font-medium title-font">
                 Custom Solutions
               </h3>
-
-              <p class="leading-relaxed text-sm">
+              <p class="leading-relaxed text-sm text-white">
                 Your Data, Your Way Tailored to your specific requirements, our
                 custom solutions ensure that you get precisely the data you
                 need, presented in a format that aligns with your business
