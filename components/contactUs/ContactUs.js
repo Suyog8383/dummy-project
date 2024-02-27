@@ -6,15 +6,19 @@ const validate = (values) => {
   const errors = {};
   if (!values.name) {
     errors.name = "Required";
-  } else if (values.name.length > 15) {
-    errors.name = "Must be 15 characters or less";
   }
+
+  // else if (values.name.length > 15) {
+  //   errors.name = "Must be 15 characters or less";
+  // }
 
   if (!values.company) {
     errors.company = "Required";
-  } else if (values.company.length > 15) {
-    errors.company = "Must be 15 characters or less";
   }
+
+  // else if (values.company.length > 15) {
+  //   errors.company = "Must be 15 characters or less";
+  // }
 
   if (!values.phone) {
     errors.phone = "Required";
@@ -24,9 +28,11 @@ const validate = (values) => {
 
   if (!values.inquiry) {
     errors.inquiry = "Required";
-  } else if (values.inquiry.length > 50) {
-    errors.inquiry = "Must be 50 characters or less";
   }
+
+  // else if (values.inquiry.length > 50) {
+  //   errors.inquiry = "Must be 50 characters or less";
+  // }
 
   if (!values.email) {
     errors.email = "Required";
